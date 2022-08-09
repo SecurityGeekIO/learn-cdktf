@@ -33,7 +33,7 @@ func main() {
 	stack := NewMyStack(app, "aws_instance")
 	cdktf.NewRemoteBackend(stack, &cdktf.RemoteBackendProps{
 		Hostname:     jsii.String("app.terraform.io"),
-		Organization: jsii.String("BD-SA-Zscaler"),
+		Organization: jsii.String("SecurityGeek"),
 		Workspaces:   cdktf.NewNamedRemoteWorkspace(jsii.String("learn-cdktf")),
 	})
 
